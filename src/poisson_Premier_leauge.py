@@ -2,7 +2,10 @@ import pandas as pd
 import numpy as np
 import requests
 from scipy.stats import poisson
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Step 1: Load Historical Data
 # Reading data directly from football-data.co.uk for the Premier League 2023/2024 season
 
@@ -122,7 +125,7 @@ attack_strength_away = away_team_stats['Goals_Scored'] / league_away_stats['Goal
 defense_strength_away = away_team_stats['Goals_Conceded'] / league_home_stats['Goals_Scored']
 
 # Step 4: Fetch Upcoming Fixtures using football-data.org API
-API_KEY = 'd2250335bc284783a274e4c611a2e485'  # Replace with your football-data.org API key
+API_KEY = os.getenv('API_KEY')  # Replace with your football-data.org API key
 BASE_URL = 'https://api.football-data.org/v4'
 headers = {'X-Auth-Token': API_KEY}
 
