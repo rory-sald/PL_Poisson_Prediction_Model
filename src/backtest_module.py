@@ -12,11 +12,11 @@ import pandas as pd
 
 def load_data():
     # Define the file paths for each season using meaningful naming conventions
-    season_2024_25_url = '/Users/rems/Documents/Python/Scraper/E0.csv'
-    season_2023_24_url = '/Users/rems/Documents/Python/Scraper/E1.csv'
-    season_2022_23_url = '/Users/rems/Documents/Python/Scraper/E2.csv'
-    season_2021_22_url = '/Users/rems/Documents/Python/Scraper/E3.csv'
-    season_2020_21_url = '/Users/rems/Documents/Python/Scraper/E4.csv'  # Added for E4.csv equivalent
+    season_2024_25_url = 'data/E0.csv'
+    season_2023_24_url = 'data/E1.csv'
+    season_2022_23_url = 'data/E2.csv'
+    season_2021_22_url = 'data/E3.csv'
+    season_2020_21_url = 'data/E4.csv'  # Added for E4.csv equivalent
 
     # Load data for each season
     season_2024_25_data = pd.read_csv(season_2024_25_url)
