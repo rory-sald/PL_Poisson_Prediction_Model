@@ -146,7 +146,7 @@ defense_strength_away.index = away_team_stats.index
 # Step 5: Fetch Upcoming Fixtures with Odds (Caching Implementation)
 # =======================
 
-API_KEY_ODDS = 'b519a9018eb18fc06b98ebfde0aecc05'  # Replace with your actual Odds API key
+API_KEY_ODDS = 'API_KEY'  # Replace with your actual Odds API key
 SPORT_KEY = 'soccer_epl'  # Ensure this is the correct sport key as per Odds API documentation
 REGIONS = 'uk'  # Adjust as needed
 CACHE_FILE = 'odds_data_cache.json'  # File to save the cached odds data
