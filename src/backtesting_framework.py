@@ -18,11 +18,11 @@ def load_data() -> pd.DataFrame:
     """
     # Define the file paths for each season using meaningful naming conventions
     season_file_paths = {
-        '2020_21': '/Users/rems/Documents/Python/Scraper/E4.csv',
-        '2021_22': '/Users/rems/Documents/Python/Scraper/E3.csv',
-        '2022_23': '/Users/rems/Documents/Python/Scraper/E2.csv',
-        '2023_24': '/Users/rems/Documents/Python/Scraper/E1.csv',
-        '2024_25': '/Users/rems/Documents/Python/Scraper/E0.csv'
+        '2020_21': 'data/E4.csv',
+        '2021_22': 'data/E3.csv',
+        '2022_23': 'data/E2.csv',
+        '2023_24': 'data/E1.csv',
+        '2024_25': 'data/E0.csv'
     }
 
     # Initialize a list to hold DataFrames for each season
