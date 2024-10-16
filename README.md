@@ -1,9 +1,10 @@
-Project Overview
-This project is designed to predict the number of goals in football matches based on historical data, leveraging the Poisson distribution to model match outcomes. The project includes a robust backtesting framework to ensure predictions are evaluated without look-forward bias. Additionally, it uses Bayesian optimization for parameter tuning to enhance model accuracy.
+# Poisson Goals Prediction Model
 
-Key Features
-Poisson Distribution Model: Estimates the number of goals scored by home and away teams using historical data.
-Backtesting Framework: Implements a fair evaluation method by preventing look-forward bias, testing the model's performance on past matches.
-Bayesian Optimization: Fine-tunes the model’s hyperparameters using Bayesian optimization to improve accuracy.
-Value Betting Identification: Identifies value bets where the model's estimated probabilities differ significantly from bookmaker odds.
-Performance Metrics: Includes metrics like accuracy, ROC-AUC, and betting performance, including Sharpe ratio and drawdown.
+This repository contains a football match prediction model that estimates the likelihood of Over/Under 2.5 goals using a Poisson distribution. The model is built to predict match outcomes based on historical match data and includes a backtesting framework for evaluating prediction performance without look-forward bias.
+
+## Project Overview
+
+- **Poisson Distribution Model**: Uses historical match data to predict goals scored by home and away teams.
+- **Backtesting Framework**: Fairly evaluates the model by splitting data chronologically and avoiding look-forward bias.
+- **Bayesian Optimization**: Optimizes hyperparameters to improve prediction accuracy.
+- **Value Betting Identification**: Identifies betting opportunities based on discrepancies between predicted probabilities and bookmaker odds.
