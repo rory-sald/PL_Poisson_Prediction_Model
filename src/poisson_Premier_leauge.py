@@ -11,11 +11,11 @@ load_dotenv()
 
 
 # Load current season data
-current_season_url = '/Users/rems/Documents/Python/Poisson_Goals_Model/E0.csv'
+current_season_url = 'data/E0.csv'
 current_season_data = pd.read_csv(current_season_url)
 
 # Load last season data
-last_season_url = '/Users/rems/Documents/Python/Poisson_Goals_Model/E1.csv'
+last_season_url = 'data/E1.csv'
 last_season_data = pd.read_csv(last_season_url)
 
 print("Current Season Columns:", current_season_data.columns)
