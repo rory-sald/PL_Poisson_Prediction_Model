@@ -9,14 +9,14 @@ sns.set(style='darkgrid')
 
 # Step 1: Load Historical Data
 # Load current season data
-current_season_url = '/Users/rems/Documents/Python/Scraper/E0.csv'
+current_season_url = 'data/E0.csv'
 current_season_data = pd.read_csv(current_season_url)
 
 # Load last season data
-last_season_url = '/Users/rems/Documents/Python/Scraper/E1.csv'
+last_season_url = 'data/E1.csv'
 last_season_data = pd.read_csv(last_season_url)
 
-last_last_season_url = '/Users/rems/Documents/Python/Scraper/E2.csv'
+last_last_season_url = 'data/E2.csv'
 last_last_season_data = pd.read_csv(last_last_season_url)
 
 # Combine last season's data first, then current season's data
